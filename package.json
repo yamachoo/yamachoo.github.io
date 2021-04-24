@@ -6,6 +6,7 @@
     "prepare": "husky install",
     "dev": "next dev",
     "build": "next build && next export",
+    "serve": "serve out",
     "lint:tsc": "tsc",
     "lint:eslint": "eslint --ext .js,.ts,.jsx,.tsx --ignore-path .gitignore --cache .",
     "lint:prettier": "prettier --ignore-path .gitignore --check .",
@@ -41,6 +42,7 @@
     "npm-run-all": "4.1.5",
     "postcss": "8.2.12",
     "prettier": "2.2.1",
+    "serve": "11.3.2",
     "tailwindcss": "2.1.2",
     "typescript": "4.2.4"
   }
