@@ -6,7 +6,7 @@
     "prepare": "husky install",
     "dev": "next dev",
     "build": "next build && next export",
-    "lint:tsc": "tsc --noEmit",
+    "lint:tsc": "tsc",
     "lint:eslint": "eslint --ext .js,.ts,.jsx,.tsx --ignore-path .gitignore --cache .",
     "lint:prettier": "prettier --ignore-path .gitignore --check .",
     "lint": "run-p lint:*",
