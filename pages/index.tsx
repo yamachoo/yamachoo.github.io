@@ -1,8 +1,27 @@
 import Head from 'next/head'
+import { UserIcon, LightningBoltIcon } from '@heroicons/react/outline'
 import { ProfileList } from '../components/ProfileList'
 import { SnsList } from '../components/SnsList'
+import { ProfileListProps } from '../next-env'
 
 export default function Home() {
+  const about: ProfileListProps = {
+    icon: <UserIcon className="h-6 w-6 mr-1" />,
+    title: 'About me',
+    descriptions: ['yamachoo', 'age 27']
+  }
+  const skill: ProfileListProps = {
+    icon: <LightningBoltIcon className="h-6 w-6 mr-1" />,
+    title: 'Skill',
+    descriptions: [
+      'Node.js / Express',
+      'Vue, React',
+      'Docker / Docker Compose',
+      'AWS ( EC2 / RDS / S3 / Lambda / API Gateway )',
+      'etc...'
+    ]
+  }
+
   return (
     <div className="min-h-screen flex flex-col">
       <Head>
@@ -24,7 +43,17 @@ export default function Home() {
             GatsbyやTypeScriptを触ってます👀
           </p>
 
-          <ProfileList />
+          <ProfileList
+            icon={about.icon}
+            title={about.title}
+            descriptions={about.descriptions}
+          />
+
+          <ProfileList
+            icon={skill.icon}
+            title={skill.title}
+            descriptions={skill.descriptions}
+          />
 
           <SnsList />
         </article>
