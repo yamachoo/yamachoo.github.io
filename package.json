@@ -17,7 +17,7 @@
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": "eslint --ignore-path .gitignore --cache --fix",
-    "*.{js,ts,jsx,tsx,css,md,json}": "prettier --ignore-path .gitignore --write"
+    "*.{js,ts,jsx,tsx,css,md,json,yml}": "prettier --ignore-path .gitignore --write"
   },
   "dependencies": {
     "@heroicons/react": "1.0.1",
