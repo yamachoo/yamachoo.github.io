@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { UserIcon, LightningBoltIcon } from '@heroicons/react/outline'
 import { ProfileList } from '../components/ProfileList'
 import { SnsList } from '../components/SnsList'
@@ -24,11 +23,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Head>
-        <title>yamachoo profile</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <header className="p-5">
         <h1 className="font-bold text-2xl text-center">yamachoo profile</h1>
       </header>
