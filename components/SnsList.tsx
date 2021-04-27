@@ -5,7 +5,7 @@ export function SnsList() {
     <div>
       <div className="font-bold text-3xl mt-10 flex items-center">
         <ShareIcon className="h-6 w-6 mr-1" />
-        <div>SNS</div>
+        <h3>SNS</h3>
       </div>
       <div className="border-l mt-4 ml-3 px-4 py-2">
         <div>
