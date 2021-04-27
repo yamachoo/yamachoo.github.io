@@ -13,7 +13,7 @@ export function SnsList() {
             href="https://twitter.com/yamachoo567"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-indigo-500 hover:text-indigo-300"
+            className="text-indigo-500 hover:text-indigo-300 dark:text-indigo-400 dark:hover:text-indigo-600"
           >
             Twitter
           </a>
@@ -23,7 +23,7 @@ export function SnsList() {
             href="https://github.com/yamachoo"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-indigo-500 hover:text-indigo-300"
+            className="text-indigo-500 hover:text-indigo-300 dark:text-indigo-400 dark:hover:text-indigo-600"
           >
             Github
           </a>
