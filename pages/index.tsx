@@ -2,6 +2,8 @@ import { UserIcon, LightningBoltIcon } from '@heroicons/react/outline'
 import { ProfileList } from '../components/molecules/ProfileList'
 import type { ProfileListProps } from '../components/molecules/ProfileList'
 import { SnsList } from '../components/molecules/SnsList'
+import { Header } from '../components/organisms/Header'
+import { Footer } from '../components/organisms/Footer'
 
 export default function Home() {
   const about: ProfileListProps = {
@@ -23,9 +25,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="p-5">
-        <h1 className="font-bold text-2xl text-center">yamachoo profile</h1>
-      </header>
+      <Header home />
 
       <main className="mb-auto md:mx-auto md:w-10/12 lg:w-8/12 p-5">
         <article className="w-full">
@@ -53,9 +53,7 @@ export default function Home() {
         </article>
       </main>
 
-      <footer className="mt-5 p-5">
-        <div className="text-center">© 2021 yamachoo</div>
-      </footer>
+      <Footer />
     </div>
   )
 }
