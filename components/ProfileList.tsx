@@ -1,6 +1,12 @@
-import { ProfileListProps } from '../next-env'
+import type { VFC } from 'react'
 
-export function ProfileList(props: ProfileListProps) {
+export type ProfileListProps = {
+  icon: JSX.Element
+  title: string
+  descriptions: string[]
+}
+
+export const ProfileList: VFC<ProfileListProps> = (props) => {
   return (
     <div>
       <div className="font-bold text-3xl mt-10 flex items-center">
