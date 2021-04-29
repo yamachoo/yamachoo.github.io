@@ -1,6 +1,8 @@
 import { ShareIcon } from '@heroicons/react/outline'
+import type { VFC } from 'react'
+import { ExternalLink } from './ExternalLink'
 
-export function SnsList() {
+export const SnsList: VFC = () => {
   return (
     <div>
       <div className="font-bold text-3xl mt-10 flex items-center">
@@ -9,24 +11,12 @@ export function SnsList() {
       </div>
       <div className="border-l mt-4 ml-3 px-4 py-2">
         <div>
-          <a
-            href="https://twitter.com/yamachoo567"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-indigo-500 hover:text-indigo-300 dark:text-indigo-400 dark:hover:text-indigo-600"
-          >
+          <ExternalLink href="https://twitter.com/yamachoo567">
             Twitter
-          </a>
+          </ExternalLink>
         </div>
         <div className="mt-2">
-          <a
-            href="https://github.com/yamachoo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-indigo-500 hover:text-indigo-300 dark:text-indigo-400 dark:hover:text-indigo-600"
-          >
-            Github
-          </a>
+          <ExternalLink href="https://github.com/yamachoo">Github</ExternalLink>
         </div>
       </div>
     </div>
