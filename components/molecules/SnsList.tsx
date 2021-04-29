@@ -1,6 +1,6 @@
 import { ShareIcon } from '@heroicons/react/outline'
 import type { VFC } from 'react'
-import { ExternalLink } from './ExternalLink'
+import { ExternalLink } from '../atoms/ExternalLink'
 
 export const SnsList: VFC = () => {
   return (

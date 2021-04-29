@@ -1,7 +1,7 @@
 import { UserIcon, LightningBoltIcon } from '@heroicons/react/outline'
-import { ProfileList } from '../components/ProfileList'
-import type { ProfileListProps } from '../components/ProfileList'
-import { SnsList } from '../components/SnsList'
+import { ProfileList } from '../components/molecules/ProfileList'
+import type { ProfileListProps } from '../components/molecules/ProfileList'
+import { SnsList } from '../components/molecules/SnsList'
 
 export default function Home() {
   const about: ProfileListProps = {
