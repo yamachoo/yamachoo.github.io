@@ -3,10 +3,14 @@ import type { DefaultSeoProps } from 'next-seo'
 export const defaultSeo: DefaultSeoProps = {
   defaultTitle: 'yamachoo profile',
   titleTemplate: '%s | yamachoo profile',
+  description: 'yamachooのprofileサイトです',
+  canonical: process.env.NEXT_PUBLIC_ROOT_URL,
   openGraph: {
+    title: 'yamachoo profile',
+    description: 'yamachooのprofileサイトです',
     type: 'website',
     locale: 'ja_JP',
-    url: 'https://yamachoo.github.io/',
+    url: process.env.NEXT_PUBLIC_ROOT_URL,
     site_name: 'yamachoo profile'
   },
   twitter: {
