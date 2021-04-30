@@ -39,7 +39,7 @@ export default function Home() {
         }}
       />
       <div className="min-h-screen flex flex-col">
-        <Header home />
+        <Header />
 
         <main className="mb-auto md:mx-auto md:w-10/12 lg:w-8/12 p-5">
           <article className="w-full">
