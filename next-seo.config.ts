@@ -1,8 +1,10 @@
 import type { DefaultSeoProps } from 'next-seo'
 
 export const defaultSeo: DefaultSeoProps = {
-  title: 'yamachoo profile',
+  defaultTitle: 'yamachoo profile',
+  titleTemplate: '%s | yamachoo profile',
   description: 'yamachooのprofileサイトです',
+  canonical: 'https://yamachoo.github.io/',
   openGraph: {
     title: 'yamachoo profile',
     description: 'yamachooのprofileサイトです',
@@ -18,6 +20,7 @@ export const defaultSeo: DefaultSeoProps = {
   },
   additionalMetaTags: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { httpEquiv: 'x-ua-compatible', content: 'IE=edge' },
     { name: 'format-detection', content: 'telephone=no' },
     { name: 'application-name', content: 'yamachoo profile' },
     { name: 'apple-mobile-web-app-capable', content: 'yes' },
