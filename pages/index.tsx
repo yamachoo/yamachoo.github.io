@@ -1,9 +1,9 @@
 import { UserIcon, LightningBoltIcon } from '@heroicons/react/outline'
-import { ProfileList } from '../components/molecules/ProfileList'
-import type { ProfileListProps } from '../components/molecules/ProfileList'
-import { SnsList } from '../components/molecules/SnsList'
-import { Header } from '../components/organisms/Header'
-import { Footer } from '../components/organisms/Footer'
+import { ProfileList } from '@/components/molecules/ProfileList'
+import type { ProfileListProps } from '@/components/molecules/ProfileList'
+import { SnsList } from '@/components/molecules/SnsList'
+import { Header } from '@/components/organisms/Header'
+import { Footer } from '@/components/organisms/Footer'
 
 export default function Home() {
   const about: ProfileListProps = {
