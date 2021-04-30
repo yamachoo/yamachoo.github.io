@@ -3,8 +3,6 @@ import { UserIcon, LightningBoltIcon } from '@heroicons/react/outline'
 import { ProfileList } from '@/components/molecules/ProfileList'
 import type { ProfileListProps } from '@/components/molecules/ProfileList'
 import { SnsList } from '@/components/molecules/SnsList'
-import { Header } from '@/components/organisms/Header'
-import { Footer } from '@/components/organisms/Footer'
 
 export default function Home() {
   const url = process.env.NEXT_PUBLIC_ROOT_URL
@@ -38,37 +36,32 @@ export default function Home() {
           description: description
         }}
       />
-      <div className="min-h-screen flex flex-col">
-        <Header />
 
-        <main className="mb-auto md:mx-auto md:w-10/12 lg:w-8/12 p-5">
-          <article className="w-full">
-            <h2 className="font-bold text-5xl">What I Do</h2>
-            <p className="mt-5">
-              BackendメインのJavaScript推しエンジニア
-              <br />
-              最近は知見を広げるためにプライベートでReact / Next /
-              GatsbyやTypeScriptを触ってます👀
-            </p>
+      <main className="mb-auto md:mx-auto md:w-10/12 lg:w-8/12 p-5">
+        <article className="w-full">
+          <h2 className="font-bold text-5xl">What I Do</h2>
+          <p className="mt-5">
+            BackendメインのJavaScript推しエンジニア
+            <br />
+            最近は知見を広げるためにプライベートでReact / Next /
+            GatsbyやTypeScriptを触ってます👀
+          </p>
 
-            <ProfileList
-              icon={about.icon}
-              title={about.title}
-              descriptions={about.descriptions}
-            />
+          <ProfileList
+            icon={about.icon}
+            title={about.title}
+            descriptions={about.descriptions}
+          />
 
-            <ProfileList
-              icon={skill.icon}
-              title={skill.title}
-              descriptions={skill.descriptions}
-            />
+          <ProfileList
+            icon={skill.icon}
+            title={skill.title}
+            descriptions={skill.descriptions}
+          />
 
-            <SnsList />
-          </article>
-        </main>
-
-        <Footer />
-      </div>
+          <SnsList />
+        </article>
+      </main>
     </>
   )
 }
