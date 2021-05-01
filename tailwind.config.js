@@ -22,7 +22,7 @@ module.exports = {
         }
       },
       animation: {
-        typing: 'typing 3s steps(23), caret 1s steps(1) infinite'
+        typing: 'typing 3s steps(17), caret 1s steps(1) infinite'
       }
     }
   },
