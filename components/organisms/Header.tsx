@@ -3,16 +3,19 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 
 export const Header: VFC = () => {
-  const router = useRouter()
+  const pathname = useRouter().pathname
+  const title = 'yamachoo profile'
+  const className =
+    'font-bold text-2xl inline-block w-typing overflow-hidden whitespace-nowrap border-r-12 border-transparent animate-typing'
 
   return (
-    <header className="p-5">
-      {router.pathname === '/' ? (
-        <h1 className="font-bold text-2xl text-center">yamachoo profile</h1>
+    <header className="p-5 flex justify-center font-mono">
+      {pathname === '/' ? (
+        <h1 className={className}>{title}</h1>
       ) : (
-        <div className="font-bold text-2xl text-center">
+        <div className={className}>
           <Link href="/">
-            <a>yamachoo profile</a>
+            <a>{title}</a>
           </Link>
         </div>
       )}
